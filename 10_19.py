@@ -75,7 +75,19 @@ with open(f,"r") as file:
         print(line)
 
 #################No.16##################
+#UNIXコマンド　split
+with open(f,"r") as files:
+    l = files.readlines()
+    if len(l)%n == 0:
+        for (i,row) in enumerate(l):
+            f = open("out{}".format(int(i/n)),"a")
+            f.write(row)
+            f.close()
+
 #################No.17##################
+
+
+
 #################No.18##################
 #################No.19##################
 
